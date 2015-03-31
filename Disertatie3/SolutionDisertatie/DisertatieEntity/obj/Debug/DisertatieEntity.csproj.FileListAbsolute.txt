@@ -1,0 +1,15 @@
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieEntity\bin\Debug\DisertatieEntity.dll.config
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieEntity\bin\Debug\DisertatieEntity.dll
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieEntity\bin\Debug\DisertatieEntity.pdb
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieEntity\bin\Debug\DisertatieModels.dll
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieEntity\bin\Debug\EntityFramework.dll
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieEntity\bin\Debug\DisertatieModels.pdb
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieEntity\bin\Debug\EntityFramework.xml
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieEntity\obj\Debug\DisertatieEntity.csprojResolveAssemblyReference.cache
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieEntity\obj\Debug\DisertatieEntity.dll
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieEntity\obj\Debug\DisertatieEntity.pdb
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieEntity\obj\Debug\DisertatieEntity.Migrations.second.resources
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieEntity\obj\Debug\DisertatieEntity.csproj.GenerateResource.Cache
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieEntity\obj\Debug\DisertatieEntity.Migrations._3.resources
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieEntity\obj\Debug\DisertatieEntity.Migrations._4.resources
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieEntity\bin\Debug\AjaxMin.dll

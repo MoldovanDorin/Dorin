@@ -1,0 +1,8 @@
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieModels\obj\Debug\DisertatieModels.csprojResolveAssemblyReference.cache
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieModels\bin\Debug\DisertatieModels.dll.config
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieModels\bin\Debug\DisertatieModels.dll
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieModels\bin\Debug\DisertatieModels.pdb
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieModels\bin\Debug\EntityFramework.dll
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieModels\bin\Debug\EntityFramework.xml
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieModels\obj\Debug\DisertatieModels.dll
+D:\Disertatie\Dorin\SolutionDisertatie\DisertatieModels\obj\Debug\DisertatieModels.pdb

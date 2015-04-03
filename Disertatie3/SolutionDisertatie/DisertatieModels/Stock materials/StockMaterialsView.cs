@@ -9,14 +9,9 @@ namespace DisertatieModels.Models
 {
     class StockMaterialsView
     {
+        public int Id { get; set; }
+
         [Display(Name = "Data")]
         public DateTime Data { get; set; }
-
-        [Display(Name = "Materie")]
-        public int? MaterieId { get; set; }
-        public virtual RawMaterials Materii { get; set; }
-
-        [Display(Name = "Cantitate")]
-        public int Cantitate { get; set; }
     }
 }

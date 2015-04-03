@@ -55,7 +55,9 @@
     <Compile Include="Account\RegisterExternalLoginModel.cs" />
     <Compile Include="Account\RegisterModel.cs" />
     <Compile Include="Amount Of Material\AmountOfMaterial.cs" />
+    <Compile Include="Amount Of Material\AmountOfMaterialView.cs" />
     <Compile Include="Amount Of Products\AmountOfProducts.cs" />
+    <Compile Include="Amount Of Products\AmountOfProductView.cs" />
     <Compile Include="Collections\CollectionView.cs" />
     <Compile Include="Consumption\Consumption.cs" />
     <Compile Include="Collections\Collections.cs" />
@@ -66,10 +68,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Raw materials\RawMaterialsView.cs" />
     <Compile Include="Recipes Materials\RecipesMaterials.cs" />
+    <Compile Include="Recipes Materials\RecipesMaterialsView.cs" />
     <Compile Include="Recipes\Recipes.cs" />
+    <Compile Include="Recipes\RecipesView.cs" />
     <Compile Include="Stock materials\StockMaterials.cs" />
     <Compile Include="Stock materials\StockMaterialsView.cs" />
     <Compile Include="Stock products\StockProducts.cs" />
+    <Compile Include="Stock products\StockProductsView.cs" />
     <Compile Include="User profile\UserProfile.cs" />
   </ItemGroup>
   <ItemGroup>

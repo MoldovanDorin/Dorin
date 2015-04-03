@@ -1,0 +1,36 @@
+﻿@model DisertatieModels.Model.AmountOfMaterial
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>AmountOfMaterial</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.rawMaterials.Nume)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.rawMaterials.Nume)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.stockMaterials.Id)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.stockMaterials.Id)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Cantitate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Cantitate)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

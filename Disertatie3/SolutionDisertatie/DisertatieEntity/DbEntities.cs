@@ -6,6 +6,7 @@ using System.Web;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Data.Entity.Validation;
 using DisertatieModels.Models;
+using DisertatieModels.Model;
 
 namespace DisertatieEntity
 {
@@ -14,7 +15,6 @@ namespace DisertatieEntity
         public DbSet<UserProfile> UserProfiles { get; set; }
         public DbSet<Consumption> Consumption { get; set; }
         public DbSet<RawMaterials> RawMaterials { get; set; }
-        public DbSet<Product> Product { get; set; }
         public DbSet<Recipes> Recipes { get; set; }
         public DbSet<StockMaterials> StockMaterials { get; set; }
         public DbSet<StockProducts> StocProduse { get; set; }
@@ -31,7 +31,19 @@ namespace DisertatieEntity
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingEntitySetNameConvention>();
+            //modelBuilder.Entity<RawMaterials>()
+            // .HasMany(c => c.Stock).WithMany(i => i.Materials)
+            // .Map(t => t.MapLeftKey("Id")
+            //     .MapRightKey("Id")
+            //     .ToTable("AmountOfMaterial"));
+
             base.OnModelCreating(modelBuilder);
         }
+
+        public DbSet<AmountOfMaterial> AmountOfMaterials { get; set; }
+
+        public DbSet<AmountOfProducts> AmountOfProducts { get; set; }
+
+        public DbSet<RecipesMaterials> RecipesMaterials { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DisertatieModels.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -11,21 +12,14 @@ namespace DisertatieModels.Models
         [Required]
         public int Id { get; set; }
 
-        public int? ProdusId { get; set; }
-
-        public virtual Product Produse { get; set; }
-
-        public int? MaterieId { get; set; }
-
-        public virtual RawMaterials Materii { get; set; }
-
-        public int Cantitate { get; set; }
+        public string Nume { get; set; }        
 
         public int? UserId { get; set; }
         public int? UpdatedBy { get; set; }
         public virtual UserProfile UserProfile { get; set; }
-                
-        
+
+        public virtual List<RecipesMaterials> RawMaterials { get; set; }
+        public virtual List<AmountOfProducts> Stocks { get; set; }
         
     }
 }

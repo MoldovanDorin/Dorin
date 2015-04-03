@@ -162,13 +162,15 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AmountOfMaterialController.cs" />
+    <Compile Include="Controllers\AmountOfProductsController.cs" />
     <Compile Include="Controllers\CollectionsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
-    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\RawMaterialsController.cs" />
     <Compile Include="Controllers\RecipesController.cs" />
-    <Compile Include="Controllers\StockMaterialsController.cs" />
+    <Compile Include="Controllers\RecipesMaterialsController.cs" />
+    <Compile Include="Controllers\StockMaretialsController.cs" />
     <Compile Include="Controllers\StockProductsController.cs" />
     <Compile Include="Controllers\UserProfileController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -186,6 +188,22 @@
     <Compile Include="Migrations\201503311337168_6.cs" />
     <Compile Include="Migrations\201503311337168_6.Designer.cs">
       <DependentUpon>201503311337168_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503312102009_7.cs" />
+    <Compile Include="Migrations\201503312102009_7.Designer.cs">
+      <DependentUpon>201503312102009_7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504011335022_8.cs" />
+    <Compile Include="Migrations\201504011335022_8.Designer.cs">
+      <DependentUpon>201504011335022_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504030844079_9.cs" />
+    <Compile Include="Migrations\201504030844079_9.Designer.cs">
+      <DependentUpon>201504030844079_9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504030927296_10.cs" />
+    <Compile Include="Migrations\201504030927296_10.Designer.cs">
+      <DependentUpon>201504030927296_10.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -314,11 +332,6 @@
     <Content Include="Views\Collections\Create.cshtml" />
     <Content Include="Views\Collections\Edit.cshtml" />
     <Content Include="Views\Collections\Delete.cshtml" />
-    <Content Include="Views\RawMaterials\Index.cshtml" />
-    <Content Include="Views\RawMaterials\Details.cshtml" />
-    <Content Include="Views\RawMaterials\Create.cshtml" />
-    <Content Include="Views\RawMaterials\Edit.cshtml" />
-    <Content Include="Views\RawMaterials\Delete.cshtml" />
     <Content Include="Views\Consumption\Index.cshtml" />
     <Content Include="Views\Consumption\Details.cshtml" />
     <Content Include="Views\Consumption\Create.cshtml" />
@@ -329,26 +342,41 @@
     <Content Include="Views\Payments\Create.cshtml" />
     <Content Include="Views\Payments\Edit.cshtml" />
     <Content Include="Views\Payments\Delete.cshtml" />
-    <Content Include="Views\Products\Index.cshtml" />
-    <Content Include="Views\Products\Details.cshtml" />
-    <Content Include="Views\Products\Create.cshtml" />
-    <Content Include="Views\Products\Edit.cshtml" />
-    <Content Include="Views\Products\Delete.cshtml" />
+    <Content Include="Views\RawMaterials\Index.cshtml" />
+    <Content Include="Views\RawMaterials\Details.cshtml" />
+    <Content Include="Views\RawMaterials\Create.cshtml" />
+    <Content Include="Views\RawMaterials\Edit.cshtml" />
+    <Content Include="Views\RawMaterials\Delete.cshtml" />
     <Content Include="Views\Recipes\Index.cshtml" />
     <Content Include="Views\Recipes\Details.cshtml" />
     <Content Include="Views\Recipes\Create.cshtml" />
     <Content Include="Views\Recipes\Edit.cshtml" />
     <Content Include="Views\Recipes\Delete.cshtml" />
-    <Content Include="Views\StockMaterials\Index.cshtml" />
-    <Content Include="Views\StockMaterials\Details.cshtml" />
-    <Content Include="Views\StockMaterials\Create.cshtml" />
-    <Content Include="Views\StockMaterials\Edit.cshtml" />
-    <Content Include="Views\StockMaterials\Delete.cshtml" />
+    <Content Include="Views\StockMaretials\Index.cshtml" />
+    <Content Include="Views\StockMaretials\Details.cshtml" />
+    <Content Include="Views\StockMaretials\Create.cshtml" />
+    <Content Include="Views\StockMaretials\Edit.cshtml" />
+    <Content Include="Views\StockMaretials\Delete.cshtml" />
     <Content Include="Views\StockProducts\Index.cshtml" />
     <Content Include="Views\StockProducts\Details.cshtml" />
     <Content Include="Views\StockProducts\Create.cshtml" />
     <Content Include="Views\StockProducts\Edit.cshtml" />
     <Content Include="Views\StockProducts\Delete.cshtml" />
+    <Content Include="Views\RecipesMaterials\Index.cshtml" />
+    <Content Include="Views\RecipesMaterials\Details.cshtml" />
+    <Content Include="Views\RecipesMaterials\Create.cshtml" />
+    <Content Include="Views\RecipesMaterials\Edit.cshtml" />
+    <Content Include="Views\RecipesMaterials\Delete.cshtml" />
+    <Content Include="Views\AmountOfMaterial\Index.cshtml" />
+    <Content Include="Views\AmountOfMaterial\Details.cshtml" />
+    <Content Include="Views\AmountOfMaterial\Create.cshtml" />
+    <Content Include="Views\AmountOfMaterial\Edit.cshtml" />
+    <Content Include="Views\AmountOfMaterial\Delete.cshtml" />
+    <Content Include="Views\AmountOfProducts\Index.cshtml" />
+    <Content Include="Views\AmountOfProducts\Details.cshtml" />
+    <Content Include="Views\AmountOfProducts\Create.cshtml" />
+    <Content Include="Views\AmountOfProducts\Edit.cshtml" />
+    <Content Include="Views\AmountOfProducts\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -366,6 +394,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201503311337168_6.resx">
       <DependentUpon>201503311337168_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503312102009_7.resx">
+      <DependentUpon>201503312102009_7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504011335022_8.resx">
+      <DependentUpon>201504011335022_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504030844079_9.resx">
+      <DependentUpon>201504030844079_9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504030927296_10.resx">
+      <DependentUpon>201504030927296_10.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

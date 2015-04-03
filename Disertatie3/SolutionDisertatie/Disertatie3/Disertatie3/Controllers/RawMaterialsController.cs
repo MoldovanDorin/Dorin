@@ -7,8 +7,6 @@ using System.Web;
 using System.Web.Mvc;
 using DisertatieModels.Models;
 using DisertatieEntity;
-using DisertatieModels.Filters;
-using WebMatrix.WebData;
 
 namespace DisertatieModels.Controllers
 {
@@ -51,14 +49,10 @@ namespace DisertatieModels.Controllers
         // POST: /RawMaterials/Create
 
         [HttpPost]
-        [Authorize]
-        [InitializeSimpleMembership]
         public ActionResult Create(RawMaterials rawmaterials)
         {
             if (ModelState.IsValid)
             {
-                int memberId = WebSecurity.GetUserId(User.Identity.Name);
-                rawmaterials.UserId = memberId;
                 db.RawMaterials.Add(rawmaterials);
                 db.SaveChanges();
                 return RedirectToAction("Index");

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DisertatieModels.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -13,11 +14,7 @@ namespace DisertatieModels.Models
 
         public DateTime Data { get; set; }
 
-        public int? MaterieId { get; set; }
-
-        public virtual RawMaterials Materii { get; set; }
-
-        public int Cantitate { get; set; }
+        public virtual List<AmountOfMaterial> Materials { get; set; }
 
     
 

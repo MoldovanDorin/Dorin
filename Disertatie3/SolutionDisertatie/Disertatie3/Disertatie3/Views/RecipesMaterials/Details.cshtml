@@ -1,0 +1,36 @@
+﻿@model DisertatieModels.Models.RecipesMaterials
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>RecipesMaterials</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Recipes.Nume)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Recipes.Nume)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RawMaterials.Nume)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RawMaterials.Nume)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Cantitate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Cantitate)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
